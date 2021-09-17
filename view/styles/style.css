@@ -127,7 +127,7 @@ header .header-menu .burger::after {
   height: 5px;
   background-color: #000;
   border-radius: 5px;
-  bottom: -10px;
+  bottom: -9px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -557,6 +557,10 @@ main .main-content .icons a:nth-child(2) {
   }
   header .mobile-menu a {
     margin: 0 auto 30px auto;
+  }
+  header .mobile-menu .btn {
+    background-color: #fff;
+    color: #000;
   }
   main,
   .contact {
