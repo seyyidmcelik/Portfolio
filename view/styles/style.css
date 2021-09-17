@@ -1,0 +1,613 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  overflow: visible;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #3f3d56;
+  border-radius: 21px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.active-burger {
+  background-color: #fff !important;
+}
+
+.active-burger::before {
+  -webkit-transform: rotate(45deg) translate(8px, 5px);
+          transform: rotate(45deg) translate(8px, 5px);
+}
+
+.active-burger::after {
+  -webkit-transform: rotate(-45deg) translate(8px, -5px);
+          transform: rotate(-45deg) translate(8px, -5px);
+}
+
+.active-mobile-menu {
+  height: 250% !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+header {
+  padding-top: 35px;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  z-index: 99;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-menu ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+header .header-menu ul li:last-of-type {
+  padding-right: 0;
+}
+
+header .header-menu ul li a {
+  color: #363636;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+header .header-menu .contact-btn {
+  margin-left: 40px;
+}
+
+header .header-menu .burger {
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+header .header-menu .burger::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 5px;
+  top: -10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+header .header-menu .burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 5px;
+  bottom: -10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+main {
+  padding: 96px 10% 0 10%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url("/view/images/Illustration.png");
+  background-repeat: no-repeat;
+  background-position: 117% -280%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+main::before {
+  content: url("/view/images/left-leaves.png");
+  position: absolute;
+  left: -110px;
+  bottom: 0;
+}
+
+main .main-content {
+  max-width: 280px;
+  position: relative;
+  bottom: 5%;
+}
+
+main .main-content .text h1 {
+  color: #363636;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+main .main-content .text p {
+  color: #363636;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 26px 0 38px 0;
+}
+
+main .main-content .icons {
+  margin-top: 79px;
+}
+
+main .main-content .icons a:nth-child(2) {
+  margin: 0 25px;
+}
+
+.resume {
+  padding: 0 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume::after {
+  content: url("/view/images/right-leaves.png");
+  position: absolute;
+  bottom: 200px;
+  right: -200px;
+}
+
+.resume .resume-title h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #363636;
+  padding-bottom: 50px;
+}
+
+.resume .resume-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10%;
+}
+
+.resume .resume-content .resume-img img {
+  width: 100%;
+}
+
+.resume .resume-content .content {
+  padding-top: 50px;
+}
+
+.resume .resume-content .content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #363636;
+  padding-bottom: 23px;
+}
+
+.resume .resume-content .content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #363636;
+}
+
+.resume-1 .content {
+  max-width: 406px;
+}
+
+.resume-2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.resume-2 .content {
+  max-width: 427px;
+}
+
+.resume-3 .content {
+  max-width: 447px;
+  padding-top: 0 !important;
+}
+
+.work {
+  padding: 0 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+.work::before {
+  content: url("/view/images/work-left-leaves.png");
+  position: absolute;
+  left: -330px;
+  top: -80px;
+}
+
+.work::after {
+  content: url("/view/images/work-right-leaves.png");
+  position: absolute;
+  right: -285px;
+  bottom: 130px;
+}
+
+.work .work-title {
+  padding-bottom: 55px;
+}
+
+.work .work-title h3 {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #363636;
+  text-align: center;
+}
+
+.work .work-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work .work-content img {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border-radius: 20px;
+}
+
+.work .work-content img:hover {
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.work .work-img-1,
+.work .work-img-3 {
+  padding-top: 56px;
+  padding-right: 56px;
+}
+
+.work .work-img-2 {
+  padding-bottom: 40px;
+}
+
+.work .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px 0;
+}
+
+.contact {
+  padding: 0 10%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url("/view/images/Contact-illustration.png");
+  background-repeat: no-repeat;
+  background-position: 145% -280%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.contact::before {
+  content: url("/view/images/contact-left-leaves.png");
+  position: absolute;
+  left: -120px;
+  bottom: 0;
+}
+
+.contact .contact-content .text h3 {
+  color: #363636;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 45px;
+  padding-bottom: 35px;
+}
+
+.contact .contact-content .text .contact-btn {
+  margin-bottom: 75px;
+}
+
+.contact .contact-content .icons a:nth-child(2) {
+  margin: 0 25px;
+}
+
+@media screen and (max-width: 1680px) {
+  main {
+    background-position: 880px -230px;
+  }
+  .contact {
+    background-position: 880px -230px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  main {
+    background-position: 820px -300px;
+  }
+  .contact {
+    background-position: 820px -300px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  main {
+    background-position: 800px -320px;
+  }
+  .contact {
+    background-position: 800px -320px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  main {
+    background-position: 670px -280px;
+    background-size: 1000px;
+  }
+  .contact {
+    background-position: 670px -280px;
+    background-size: 1000px;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  main {
+    background-size: 900px;
+    background-position: 710px -290px;
+  }
+  .work img {
+    width: 450px;
+  }
+  .contact {
+    background-size: 900px;
+    background-position: 710px -290px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    background-size: 800px;
+    background-position: 660px -240px;
+  }
+  .work img {
+    width: 400px;
+  }
+  .contact {
+    background-size: 800px;
+    background-position: 660px -240px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    background-size: 700px;
+    background-position: 490px -160px;
+  }
+  .resume .resume-content .resume-img img {
+    width: 90%;
+  }
+  .work img {
+    width: 300px;
+  }
+  .contact {
+    background-size: 700px;
+    background-position: 490px -160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    background-position: 290px -70px;
+  }
+  .resume::after {
+    z-index: -99;
+  }
+  .resume .resume-content {
+    padding-bottom: 20%;
+  }
+  .resume .resume-content .content {
+    padding-top: 25px;
+  }
+  .resume .resume-content .resume-img img {
+    width: 100%;
+  }
+  .resume .resume-1,
+  .resume .resume-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume .resume-1 .content,
+  .resume .resume-3 .content {
+    padding-top: 25px !important;
+    min-width: 100%;
+  }
+  .resume .resume-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume .resume-2 .content {
+    min-width: 100%;
+  }
+  .work img {
+    width: 400px;
+  }
+  .work .work-img-1,
+  .work .work-img-2,
+  .work .work-img-3 {
+    padding: 0 0 30px 0;
+  }
+  .contact {
+    background-position: 370px -70px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .header-menu ul,
+  header .header-menu a {
+    display: none;
+  }
+  header .header-menu .burger {
+    display: block;
+  }
+  header .mobile-menu {
+    width: 100%;
+    height: 0;
+    background-color: rgba(31, 30, 30, 0.9);
+    position: absolute;
+    top: 100px;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 0 0 10px 10px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .mobile-menu ul li {
+    padding: 20px 0;
+    text-align: center;
+  }
+  header .mobile-menu ul li a {
+    color: #fff;
+  }
+  header .mobile-menu a {
+    margin: 0 auto 30px auto;
+  }
+  main,
+  .contact {
+    background: none;
+  }
+  main .contact-content,
+  .contact .contact-content {
+    z-index: 99;
+    position: relative;
+    left: 20px;
+  }
+  .resume::after {
+    z-index: -99;
+  }
+  .resume .resume-content {
+    padding-bottom: 20%;
+  }
+  .resume .resume-content .content {
+    padding-top: 25px;
+  }
+  .resume .resume-content .resume-img img {
+    width: 100%;
+  }
+  .resume .resume-1,
+  .resume .resume-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume .resume-1 .content,
+  .resume .resume-3 .content {
+    padding-top: 25px !important;
+  }
+  .resume .resume-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work::before {
+    z-index: -99;
+  }
+  .work::after {
+    z-index: -99;
+  }
+  .work img {
+    width: 300px;
+  }
+  .contact {
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
