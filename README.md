@@ -5,13 +5,13 @@
 
 ### On Desktop
 
-![Desktop-1](desktop-portfolio.png)
+![Desktop-1](/view/images/desktop-portfolio.png)
 
-![Desktop-2](desktop-portfolio-2.png)
+![Desktop-2](/view/images/desktop-portfolio-2.png)
 
 
 ### On Mobile
 
-![Mobile-1](mobile-portfolio.png)
+![Mobile-1](/view/images/mobile-portfolio.png)
 
-![Mobile-2](mobile-portfolio-2.png)
+![Mobile-2](/view/images/mobile-portfolio-2.png)
